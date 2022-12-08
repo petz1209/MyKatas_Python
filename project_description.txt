@@ -1,0 +1,21 @@
+Welcome to the Song Manager App.
+
+This App is a songs library for our users.
+It allows the users to upload new songs, get all their songs or just a single one and also
+to serialize (reformat) a song based on their preferred format.
+
+This App was originally written as a prototype, so there wasn't any emphasis clean code or structure.
+However, due to the growing popularity our Management has asked for additional features. But since
+Bob, the developer who created this project, is retired, we cannot seem to figure out how this thing works.
+Therefor nobody wants to touch the code and management is getting a bit annoyed.
+I guess it is time to clean up the code base. We think you are the developer to do so.
+
+take a look at the code from scratch. At first, don't bother with implementing new features. Focus only
+on refactoring the code.
+
+The goals of your refactoring are:
+- divide business logic data and client views
+- increase coherence and reduce coupling in to lighten the job of adding new features
+
+the code is in src/original_code.py
+Best of luck
