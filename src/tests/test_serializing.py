@@ -9,8 +9,12 @@ def test_song_creation():
     assert isinstance(song, Song)
 
 
-def test_serialize_to_json():
+def test_song_creation_invalid():
+    with pytest.raises(TypeError):
+        song = Song(1, "country roads")
 
+
+def test_serialize_to_json():
     song = Song(1, "country roads", "john denver")
     serializer = SongSerializer()
     json_song = serializer.serialize(song, "JSON")
