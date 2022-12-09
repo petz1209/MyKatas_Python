@@ -20,7 +20,7 @@ class SongSerializer:
             }
             return json.dumps(song_info)
         elif format == 'XML':
-            song_info = et.Element('song', attrib={'id': song.song_id})
+            song_info = et.Element('song', attrib={'id': str(song.song_id)})
             title = et.SubElement(song_info, 'title')
             title.text = song.title
             artist = et.SubElement(song_info, 'artist')
